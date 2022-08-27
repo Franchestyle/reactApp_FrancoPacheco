@@ -7,7 +7,7 @@ function App(props) {
   return (
     <div className="container">
       <NavBar/>
-      <ItemListContainer greeting={"holi"}/>
+      <ItemListContainer greeting={"Comming Soon"}/>
     </div>
   );
 }
