@@ -1,6 +1,11 @@
-const ItemListContainer = ({greeting}) => {
+import React from 'react'
+
+const ItemListContainer = () => {
   return (
-    <div>{greeting}</div>
+    <div>
+        <h1>Comming Soon</h1>
+    </div>
   )
 }
+
 export default ItemListContainer
