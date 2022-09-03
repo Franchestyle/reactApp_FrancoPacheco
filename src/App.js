@@ -1,18 +1,20 @@
-//import logo from './logo.svg';
-import './App.css';
-import { BrowserRouter as Router, Switch, Route} from 'react-router-dom'
-import Navbar from './components/navegation/Navbar';
-import Inicio from './components/pages/Inicio';
-import Productos from './components/pages/Productos';
-import Nosotros from './components/pages/Nosotros';
-import ItemListContainer from './components/ItemListContainer';
+import "./App.css";
+import Navbar from "./components/navegation/Navbar";
+// import Inicio from "./components/pages/Inicio";
+// import Productos from "./components/pages/Productos";
+// import Nosotros from "./components/pages/Nosotros";
+import Booster from "./components/Booster";
+import ItemCount from "./components/ItemCount";
 
 function App() {
+
+
   return (
-    <Router>
-      <Navbar/>
-      <ItemListContainer greeting={'cooming soon'}/>
-    </Router>
+    <>
+      <Navbar />
+      <ItemCount/>
+      <Booster/>
+    </>
   );
 }
 

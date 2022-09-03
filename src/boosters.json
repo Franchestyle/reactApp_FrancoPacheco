@@ -1,0 +1,39 @@
+[
+    {
+        "id": "1",
+        "title": "Shining Fates",
+        "price": "10",
+        "img": "./img/img1.jpg"
+    },
+    {
+        "id": "2",
+        "title": "Sun and Moon",
+        "price": "15",
+        "img": "./img/img2.jpg"
+    },
+    {
+        "id": "3",
+        "title": "Evolving Skies",
+        "price": "10",
+        "img": "./img/img3.jpg"
+    },
+    {
+        "id": "4",
+        "title": "Evolutions",
+        "price": "15",
+        "img": "./img/img4.jpg"
+    },
+    {
+        "id": "5",
+        "title": "Fusion Strike",
+        "price": "12",
+        "img": "./img/img5.jpg"
+    },
+    {
+        "id": "6",
+        "title": "Unbroken Bonds",
+        "price": "15",
+        "img": "./img/img6.jpg"
+    }
+    
+]

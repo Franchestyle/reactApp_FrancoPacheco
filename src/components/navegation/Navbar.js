@@ -1,35 +1,22 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
-import CartWidget from './CartWidget'
+// import CartWidget from './CartWidget'
 
 const navbar = () => {
   return (
-    <div>
-        <nav className="navbar navbar-expand-lg bg-light">
-  <div className="container-fluid">
-    <Link to='/'>
-        <img src='./pokeball.png' width='40'></img>
-    </Link>
-    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span className="navbar-toggler-icon"></span>
-    </button>
-    <div className="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul className="navbar-nav m-auto">
-        <li className="nav-item">
-          <Link className="nav-link active" to='/' >Inicio</Link>
-        </li>
-        <li className="nav-item">
-          <Link className="nav-link" to='/Productos' >Productos</Link>
-        </li>
-        <li className="nav-item">
-        <Link className="nav-link" to='/Nosotros' >Nosotros</Link>
-        </li>
-      </ul>
-      <CartWidget/>
-    </div>
+<div className="navbar bg-base-100">
+  <div className="flex-1">
+    <img src='./pokeball.png' width='30'></img>
+    <a className="btn btn-ghost normal-case text-xl">Poke-mart</a>
   </div>
-</nav>
-    </div>
+  <div className="flex-none">
+    <ul className="menu menu-horizontal p-0">
+      <li><a>Inicio</a></li>
+      <li><a>Productos</a></li>
+      <li><a>Nosotros</a></li>
+    </ul>
+    <img src='./cartwidget.png' width='30'></img>
+  </div>
+</div>
   )
 }
 
