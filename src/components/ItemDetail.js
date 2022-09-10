@@ -1,7 +1,9 @@
 import React from 'react'
+import ItemCount from './ItemCount'
 
 
-const Booster = ({title, img, price}) => {
+const ItemDetail = ({title, price, img}) => {
+
   return (
     <div className="card w-96 bg-base-100 shadow-xl">
   <figure><img src={img} alt={title} /></figure>
@@ -9,11 +11,11 @@ const Booster = ({title, img, price}) => {
     <h2 className="card-title">{title}</h2>
     <p>${price}</p>
     <div className="card-actions justify-end">
-      <button className="btn btn-primary">Comprar</button>
+      <ItemCount stock="5" initial="1"/>
     </div>
   </div>
 </div>
   )
 }
 
-export default Booster
+export default ItemDetail

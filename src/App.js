@@ -1,19 +1,23 @@
 import "./App.css";
 import Navbar from "./components/navegation/Navbar";
-// import Inicio from "./components/pages/Inicio";
-// import Productos from "./components/pages/Productos";
-// import Nosotros from "./components/pages/Nosotros";
-import Booster from "./components/Booster";
-import ItemCount from "./components/ItemCount";
+import Productos from "./components/pages/Productos";
+import Nosotros from "./components/pages/Nosotros";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ItemDetailcontainer from "./components/ItemDetailcontainer";
 
 function App() {
 
 
   return (
     <>
-      <Navbar />
-      <ItemCount/>
-      <Booster/>
+      <BrowserRouter>
+          <Navbar />
+        <Routes>
+          <Route path='/Productos' element={<Productos/>}/>
+          <Route path='/Nosotros' element={<Nosotros/>}/>
+          <Route path='/Productos/:id' element={<ItemDetailcontainer/>}/>
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }

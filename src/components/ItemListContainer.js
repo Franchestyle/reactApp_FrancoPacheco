@@ -1,11 +1,10 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import boostersJson from "../boosters.json";
-import {BoostersList} from "./BoostersList";
+import ItemList from "./ItemList";
 
-/* No logre traer los datos del JSON, hice exactamente como lo hicieron en el after pero no entiendo porque no lo puedo llevar a Booster.js */
 
-const BoostersContainer = () => {
+const ItemListContainer = () => {
   const [booster, setBooster] = useState([]);
 
   const getBoost = (data, time) =>
@@ -20,16 +19,18 @@ const BoostersContainer = () => {
     });
 
     useEffect(()=>{
-        getBoost(boostersJson, 3000)
+        getBoost(boostersJson, 2000)
         .then((res) => {
             setBooster(res);
         })
         .catch((err) => console.log(err, ": se rompio el archivo Json pa"));
     }, []);
 
-  return <div>
-    <BoostersList booster={booster}/>
-  </div>;
+  return (
+    <div>
+      <ItemList booster={booster} />
+    </div>
+  )
 };
 
-export default BoostersContainer;
+export default ItemListContainer;
